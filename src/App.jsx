@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export const App = () => {
+const App = () => {
   const [theme, setTheme] = useState('light')
 
   useEffect(() => {
@@ -13,5 +13,12 @@ export const App = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
   }
 
-  return <button onClick={themeToggle}>Toogle Theme</button>
+  return (
+    <div>
+      <button onClick={themeToggle}>Toogle Theme</button>
+      <h1>hello, world</h1>
+    </div>
+  )
 }
+
+export default App
