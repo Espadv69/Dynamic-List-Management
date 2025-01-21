@@ -28,7 +28,9 @@ const App = () => {
 
   return (
     <div>
-      <button onClick={themeToggle}>Toogle Theme</button>
+      <button className="themeToggle-button" onClick={themeToggle}>
+        Toogle Theme
+      </button>
       <ItemList items={items} onDeleteItem={handleDeleteItem} />
     </div>
   )
