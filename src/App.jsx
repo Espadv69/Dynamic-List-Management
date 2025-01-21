@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 
+import ItemList from './components/ItemList.jsx'
+
 const App = () => {
   const [items, setItems] = useState([
     { id: 1, name: 'Godofredo' },
@@ -27,7 +29,7 @@ const App = () => {
   return (
     <div>
       <button onClick={themeToggle}>Toogle Theme</button>
-      <h1>hello, world</h1>
+      <ItemList items={items} onDeleteItem={handleDeleteItem} />
     </div>
   )
 }
