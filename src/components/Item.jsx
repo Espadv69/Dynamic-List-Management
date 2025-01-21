@@ -1,6 +1,8 @@
+import '../css/Item.css'
+
 const Item = ({ item, onDelete }) => {
   return (
-    <li>
+    <li className="li-list">
       {item.name} <button onClick={() => onDelete(item.id)}>Delete</button>
     </li>
   )
