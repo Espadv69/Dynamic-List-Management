@@ -2,3 +2,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+.li-list button {
+  cursor: pointer;
+
+  padding: .5rem;
+
+  border: 1px solid currentColor;
+  border-radius: 5px;
+
+  color: currentColor;
+  background-color: royalblue;
+}
