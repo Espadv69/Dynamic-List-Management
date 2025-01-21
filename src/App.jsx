@@ -19,6 +19,11 @@ const App = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
   }
 
+  const handleDeleteItem = (id) => {
+    const updateItems = items.filter((item) => item.id !== id)
+    setItems(updateItems)
+  }
+
   return (
     <div>
       <button onClick={themeToggle}>Toogle Theme</button>
