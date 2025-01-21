@@ -32,7 +32,9 @@ body {
 
   overflow: hidden;
 
-  transition: background-color .3s, color .3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 body.light {
@@ -62,7 +64,7 @@ body.dark {
   color: currentColor;
   background: transparent;
 
-  transition: background-color .4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .themeToggle-button:hover {
