@@ -6,7 +6,7 @@
 .li-list button {
   cursor: pointer;
 
-  padding: .5rem;
+  padding: 0.5rem;
 
   border: 1px solid currentColor;
   border-radius: 5px;
