@@ -1,12 +1,18 @@
 import { useState, useEffect } from 'react'
 
 const App = () => {
+  const [items, setItems] = useState([
+    { id: 1, name: 'Godofredo' },
+    { id: 2, name: 'Paco' },
+    { id: 3, name: 'Aitor' },
+    { id: 4, name: 'Carlos' },
+    { id: 5, name: 'Tanotavi' },
+  ])
   const [theme, setTheme] = useState('light')
 
   useEffect(() => {
     document.body.classList.remove('light', 'dark')
     document.body.classList.add(theme)
-    console.log('theme toggle')
   }, [theme])
 
   const themeToggle = () => {
